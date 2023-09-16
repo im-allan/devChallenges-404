@@ -38,7 +38,7 @@ import Scarecrow from '../assets/Scarecrow.png'
 		justify-content: center;
 		height: auto;
 		width: 85%;
-		gap: 5em;
+		gap: 5rem;
 		margin: auto;
 	}
 
@@ -70,7 +70,8 @@ import Scarecrow from '../assets/Scarecrow.png'
 		font-weight: 400;
 		letter-spacing: -0.84px;
 		line-height: normal;
-		width: 55%;
+		width: 60%;
+		margin: 36px 0 64px 0;
 	}
 
 	button {
@@ -78,11 +79,12 @@ import Scarecrow from '../assets/Scarecrow.png'
 		color: #fff;
 		flex-shrink: 0;
 		font-family: Space Mono;
-		font-size: 14px;
+		font-size: 1rem;
 		font-weight: 700;
 		height: 68px;
 		letter-spacing: -0.49px;
 		width: 216px;
+		margin: 0 0 306px 0;
 	}
 
 	/* Footer */
@@ -91,8 +93,7 @@ import Scarecrow from '../assets/Scarecrow.png'
 		align-items: end;
 		display: flex;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 14px;
-		height: 10%;
+		font-size: 1rem;
 		justify-content: center;
 		width: 100%;
 	}
@@ -105,6 +106,23 @@ import Scarecrow from '../assets/Scarecrow.png'
 	a {
 		color: #BDBDBD;
 		font-weight: 700;
+	}
+
+	/* Media queries */
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 48px;
+			letter-spacing: -1.68px;
+		}
+		section > p {
+			font-size: 18px;
+			letter-spacing: -0.63px;
+			width: 100%;
+			margin: 30px 0 66px 0;
+		}
+		button {
+			margin: 0 0 114px 0;
+		}
 	}
 
 </style>
