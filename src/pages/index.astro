@@ -1,41 +1,62 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import Scarecrow from '../assets/Scarecrow.png'
 ---
 
 <Layout title="404 Not Found Challenge">
 	<!-- TODO: Add header content -->
 	<header>
 	</header>
-	<!-- TODO: Add main content -->
-	<main>		
+	<main>
+		<section class="v-align">
+			<img src={Scarecrow.src} alt="funny scarecrow" class="img"/>
+		</section>
+		<!-- <section>
+			<h1>I have bad news for you</h1>
+			<p>The page you are looking for might be removed or is temporarily unavailable</p>
+			<button>BACK TO HOMEPAGE</button>
+		</section> -->
 	</main>
-	<!-- TODO: Add footer -->
 	<footer>
 		<p>created by <a href="https://github.com/im-allan" target="_blank">im-allan</a> - devchallenges.io </p>
 	</footer>
 </Layout>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
 
+	header{
+		height: 15%;
+	}
+
+	/* Main */
 	main {
 		background-color: white;
-		height: 92%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: auto;
+		width: 85%;
+		gap: 5em;
+		margin: auto;
 	}
+
+	/* Footer */
 
 	footer {
+		align-items: end;
+		display: flex;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 14px;
-		display: flex;
+		height: 10%;
 		justify-content: center;
 		width: 100%;
-		height: 8%;
 	}
 
-	p {
-		font-weight: 500;
+	footer > p {
 		color: #BDBDBD;
+		font-weight: 500;
 	}
 
 	a {
