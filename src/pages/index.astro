@@ -7,6 +7,7 @@ import Scarecrow from '../assets/Scarecrow.png'
 <Layout title="404 Not Found Challenge">
 	<!-- TODO: Add header content -->
 	<header>
+		<h2>404 NOT FOUND</h2>
 	</header>
 	<main>
 		<section class="v-align">
@@ -24,10 +25,21 @@ import Scarecrow from '../assets/Scarecrow.png'
 </Layout>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
+	/* Fonts-family */
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
 
+	/* Header */
 	header{
-		height: 15%;
+		width: 85%;
+		margin: auto;
+	}
+	header > h2 {
+		color: #333;
+		font-family: Inconsolata;
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: -1.92px;
+		margin: 40px 0 180px 0;
 	}
 
 	/* Main */
@@ -46,13 +58,12 @@ import Scarecrow from '../assets/Scarecrow.png'
 	.img {
 		width: 100%;
 	}
-
 	section {
 		flex: 45%;
 	}
 
 	/* Main - Text */
-	h1 {
+	section > h1 {
 		font-family: 'Space Mono', monospace;
 		font-size: 64px;
 		font-style: normal;
@@ -61,7 +72,6 @@ import Scarecrow from '../assets/Scarecrow.png'
 		line-height: normal;
 		margin-top: 0;
 	}
-
 	section > p {
 		color: #4F4F4F;
 		font-family: 'Space Mono', monospace;
@@ -73,8 +83,7 @@ import Scarecrow from '../assets/Scarecrow.png'
 		margin: 36px 0 64px 0;
 		width: 60%;
 	}
-
-	button {
+	section > button {
 		background-color: #333333;
 		color: #fff;
 		flex-shrink: 0;
@@ -88,7 +97,6 @@ import Scarecrow from '../assets/Scarecrow.png'
 	}
 
 	/* Footer */
-
 	footer {
 		align-items: end;
 		display: flex;
@@ -97,20 +105,18 @@ import Scarecrow from '../assets/Scarecrow.png'
 		justify-content: center;
 		width: 100%;
 	}
-
 	footer > p {
 		color: #BDBDBD;
 		font-weight: 500;
 	}
-
-	a {
+	footer > p > a {
 		color: #BDBDBD;
 		font-weight: 700;
 	}
 
 	/* Media queries */
 	@media (max-width: 700px) {
-		h1 {
+		section > h1 {
 			font-size: 48px;
 			letter-spacing: -1.68px;
 		}
@@ -120,9 +126,11 @@ import Scarecrow from '../assets/Scarecrow.png'
 			margin: 30px 0 66px 0;
 			width: 100%;
 		}
-		button {
+		section > button {
 			margin: 0 0 114px 0;
 		}
+		header > h2 {
+			margin: 20px 0 64px 0;
+		}
 	}
-
 </style>
