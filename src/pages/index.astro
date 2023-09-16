@@ -1,46 +1,128 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import Scarecrow from '../assets/Scarecrow.png'
 ---
 
 <Layout title="404 Not Found Challenge">
 	<!-- TODO: Add header content -->
 	<header>
 	</header>
-	<!-- TODO: Add main content -->
-	<main>		
+	<main>
+		<section class="v-align">
+			<img src={Scarecrow.src} alt="funny scarecrow" class="img"/>
+		</section>
+		<section>
+			<h1>I have bad news for you</h1>
+			<p>The page you are looking for might be removed or is temporarily unavailable</p>
+			<button>BACK TO HOMEPAGE</button>
+		</section>
 	</main>
-	<!-- TODO: Add footer -->
 	<footer>
 		<p>created by <a href="https://github.com/im-allan" target="_blank">im-allan</a> - devchallenges.io </p>
 	</footer>
 </Layout>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap');
 
+	header{
+		height: 15%;
+	}
+
+	/* Main */
 	main {
 		background-color: white;
-		height: 92%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: auto;
+		width: 85%;
+		gap: 5rem;
+		margin: auto;
 	}
+
+	/* Main - Scarecrow */
+	.img {
+		width: 100%;
+	}
+
+	section {
+		flex: 45%;
+	}
+
+	/* Main - Text */
+	h1 {
+		font-family: 'Space Mono', monospace;
+		font-size: 64px;
+		font-style: normal;
+		font-weight: 700;
+		letter-spacing: -2.24px;
+		line-height: normal;
+		margin-top: 0;
+	}
+
+	section > p {
+		color: #4F4F4F;
+		font-family: 'Space Mono', monospace;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: -0.84px;
+		line-height: normal;
+		width: 60%;
+		margin: 36px 0 64px 0;
+	}
+
+	button {
+		background-color: #333333;
+		color: #fff;
+		flex-shrink: 0;
+		font-family: Space Mono;
+		font-size: 1rem;
+		font-weight: 700;
+		height: 68px;
+		letter-spacing: -0.49px;
+		width: 216px;
+		margin: 0 0 306px 0;
+	}
+
+	/* Footer */
 
 	footer {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 14px;
+		align-items: end;
 		display: flex;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1rem;
 		justify-content: center;
 		width: 100%;
-		height: 8%;
 	}
 
-	p {
-		font-weight: 500;
+	footer > p {
 		color: #BDBDBD;
+		font-weight: 500;
 	}
 
 	a {
 		color: #BDBDBD;
 		font-weight: 700;
+	}
+
+	/* Media queries */
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 48px;
+			letter-spacing: -1.68px;
+		}
+		section > p {
+			font-size: 18px;
+			letter-spacing: -0.63px;
+			width: 100%;
+			margin: 30px 0 66px 0;
+		}
+		button {
+			margin: 0 0 114px 0;
+		}
 	}
 
 </style>
