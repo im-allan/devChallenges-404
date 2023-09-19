@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">404 Not Found}</h1>
+<h1 align="center">404 Not Found</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -9,12 +9,12 @@
 <div align="center">
   <h3>
   <!-- TODO: Add domain -->
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://error-404-devchallenges.netlify.app/">
       Demo
     </a>
     <span> | </span>
     <!-- TODO: Add url to the solution -->
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://error-404-devchallenges.netlify.app/">
       Solution
     </a>
     <span> | </span>
@@ -42,7 +42,7 @@
 
 Hello! You can access the demo of the page through the following link:
 
-[demo]()
+[demo](https://error-404-devchallenges.netlify.app/)
 
 My experience in Fullstack development, with emphasis on cutting-edge technology. It has allowed me to acquire solid skills. During this project, I focused my attention on improving responsive design with CSS, minimizing the use of media queries, and optimizing the layout using flexbox. This ensured an exceptional user experience across multiple devices.
 
